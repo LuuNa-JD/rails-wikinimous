@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikinimous</title>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Wikinimous</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><%= link_to "New article", new_article_path %></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <ul class="article-list">
+          <% @articles.each do |article| %>
+            <li class="article-list-item">
+                <div class="article-title"><%= link_to article.title, article_path(article)  %></div>
+                <div class="article-content">
+                  <%= article.content %>
+                </div>
+            </li>
+          <% end %>
+        </ul>
+    </div>
+</body>
+</html>

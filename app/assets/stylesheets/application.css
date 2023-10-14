@@ -13,3 +13,127 @@
  *= require_tree .
  *= require_self
  */
+ body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-list {
+  list-style: none;
+}
+
+.article-list-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.article-content {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Links */
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Style for the default navbar */
+.navbar.navbar-default {
+  background-color: #000000;
+  border: none;
+  margin-bottom: 0;
+}
+
+
+.navbar.navbar-default a {
+  color: #1a51e8;
+}
+
+
+.navbar.navbar-default a:hover {
+  color: #04399c;
+}
+
+
+.navbar.navbar-default .navbar-brand {
+  color: #326dda;
+}
+
+
+.navbar.navbar-default .navbar-brand:hover {
+  color: #b31a1a;
+}
+
+
+.navbar.navbar-default .dropdown-menu {
+  background-color: #080404;
+}
+
+
+.navbar.navbar-default .dropdown-menu a {
+  color: #2d1c1c;
+}
+
+.navbar.navbar-default .dropdown-menu a:hover {
+  background-color: #070707;
+  color: #782121;
+}
+
+.navbar.navbar-default .active {
+  background-color: #0e0d0d;
+}
+
+.navbar.navbar-default .navbar-toggle {
+  background-color: #121314;
+  border: none;
+}
+
+
+.navbar.navbar-default .navbar-toggle .icon-bar {
+  background-color: #0f0e0e;
+}
+
+.navbar.navbar-default .navbar-toggle:hover {
+  background-color: #ab1818;
+}
+
+.navbar.navbar-default .navbar-collapse.collapse {
+  background-color: #ca1a1a;
+}

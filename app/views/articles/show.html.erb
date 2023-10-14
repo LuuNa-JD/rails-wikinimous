@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+</head>
+<body>
+    <div class="container-show">
+      <h1 class="task-title-show"><%= @article.title %></h1>
+      <p class="task-details"><%= @article.content %></p>
+      <a class="button" href="<%= edit_article_path(@article) %>">Edit</a>
+      <%=link_to "Delete",
+      article_path(@article), class: "button",
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+      %>
+      <a class="button" href="<%= articles_path %>">Back</a>
+    </div>
+</body>
+</html>
